@@ -21,24 +21,36 @@ public class PostRegister {
 //    @Expose
     private Integer id = 1;
 
-    public PostRegister(String name, String mobile, String email, String password, Integer id) {
+    private String gender;
+
+    public PostRegister(String name, String mobile, String email, String password, Integer id, String gender) {
         this.name = name;
         this.mobile = mobile;
         this.email = email;
         this.password = password;
         this.id = id;
+        this.gender = gender;
     }
-    public PostRegister(String name, String email, Integer id) {
+    public PostRegister(String name, String email, Integer id, String gender) {
         this.name = name;
         this.mobile = "1";
         this.email = email;
         this.password =  "1";
         this.id = id;
+        this.gender = gender;
     }
 
     public String getName() {
         return name;
 
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
     }
 
     public void setName(String name) {

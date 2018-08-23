@@ -25,7 +25,7 @@ public class UserListActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_list);
 
-        recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+       // recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
 
         mAdapter = new UserListAdapter(userlistList);
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
@@ -45,49 +45,49 @@ public class UserListActivity extends Activity {
 //        }catch (NullPointerException ae){
 //            Log.d("Bhaskar", ae.getMessage());
 //        }
-        prepareMovieData();
+       // prepareMovieData();
 
         mAdapter.notifyDataSetChanged();
     }
 
-    private void prepareMovieData() {
-        PostRegister movie = new PostRegister("Bhaskar", "bsjdbdasbads@gmail.com", 1);
-        userlistList.add(movie);
-
-        movie = new PostRegister("Bhaskar", "bsjdbdasbads@gmail.com", 1);
-        userlistList.add(movie);
-
-        movie = new PostRegister("Bhaskar", "bsjdbdasbads@gmail.com", 1);
-        userlistList.add(movie);
-
-        movie = new PostRegister("Bhaskar", "bsjdbdasbads@gmail.com", 1);
-        userlistList.add(movie);
-        movie = new PostRegister("Bhaskar", "bsjdbdasbads@gmail.com", 1);
-        userlistList.add(movie);
-
-        movie = new PostRegister("Bhaskar", "bsjdbdasbads@gmail.com", 1);
-        userlistList.add(movie);
-
-        movie = new PostRegister("Bhaskar", "bsjdbdasbads@gmail.com", 1);
-        userlistList.add(movie);
-        movie = new PostRegister("Bhaskar", "bsjdbdasbads@gmail.com", 1);
-        userlistList.add(movie);
-
-        movie = new PostRegister("Bhaskar", "bsjdbdasbads@gmail.com", 1);
-        userlistList.add(movie);
-
-        movie = new PostRegister("Bhaskar", "bsjdbdasbads@gmail.com", 1);
-        userlistList.add(movie);
-        movie = new PostRegister("Bhaskar", "bsjdbdasbads@gmail.com", 1);
-        userlistList.add(movie);
-
-        movie = new PostRegister("Bhaskar", "bsjdbdasbads@gmail.com", 1);
-        userlistList.add(movie);
-
-        movie = new PostRegister("Bhaskar", "bsjdbdasbads@gmail.com", 1);
-        userlistList.add(movie);
-
-
-    }
+//    private void prepareMovieData() {
+//        PostRegister movie = new PostRegister("Bhaskar", "bsjdbdasbads@gmail.com", 1);
+//        userlistList.add(movie);
+//
+//        movie = new PostRegister("Bhaskar", "bsjdbdasbads@gmail.com", 1);
+//        userlistList.add(movie);
+//
+//        movie = new PostRegister("Bhaskar", "bsjdbdasbads@gmail.com", 1);
+//        userlistList.add(movie);
+//
+//        movie = new PostRegister("Bhaskar", "bsjdbdasbads@gmail.com", 1);
+//        userlistList.add(movie);
+//        movie = new PostRegister("Bhaskar", "bsjdbdasbads@gmail.com", 1);
+//        userlistList.add(movie);
+//
+//        movie = new PostRegister("Bhaskar", "bsjdbdasbads@gmail.com", 1);
+//        userlistList.add(movie);
+//
+//        movie = new PostRegister("Bhaskar", "bsjdbdasbads@gmail.com", 1);
+//        userlistList.add(movie);
+//        movie = new PostRegister("Bhaskar", "bsjdbdasbads@gmail.com", 1);
+//        userlistList.add(movie);
+//
+//        movie = new PostRegister("Bhaskar", "bsjdbdasbads@gmail.com", 1);
+//        userlistList.add(movie);
+//
+//        movie = new PostRegister("Bhaskar", "bsjdbdasbads@gmail.com", 1);
+//        userlistList.add(movie);
+//        movie = new PostRegister("Bhaskar", "bsjdbdasbads@gmail.com", 1);
+//        userlistList.add(movie);
+//
+//        movie = new PostRegister("Bhaskar", "bsjdbdasbads@gmail.com", 1);
+//        userlistList.add(movie);
+//
+//        movie = new PostRegister("Bhaskar", "bsjdbdasbads@gmail.com", 1);
+//        userlistList.add(movie);
+//
+//
+//    }
 
 }

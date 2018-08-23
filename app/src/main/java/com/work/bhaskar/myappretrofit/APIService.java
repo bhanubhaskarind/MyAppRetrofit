@@ -21,7 +21,8 @@ public interface APIService {
                         @Field("mobile") String mobile,
                         @Field("email") String email,
                          @Field("password") String password,
-                         @Field("id") int id);
+                         @Field("id") int id,
+                         @Field("gender") String gender);
 
 
     @GET("counterapp/myfile.php")
